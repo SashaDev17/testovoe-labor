@@ -1,0 +1,154 @@
+ul,
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  position: relative;
+  min-height: 963px;
+  width: 100%;
+  align-items: center;
+  padding: 26px 60px 80px;
+  overflow: hidden;
+}
+
+.activeDot {
+  background-color: #2a6cea;
+  border-radius: 50%;
+  z-index: 10;
+  width: 24px;
+  height: 24px;
+}
+
+.inactiveDot {
+  background-color: #eceff2;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.background_container {
+
+}
+
+.backgroundImage {
+  position: absolute;
+  display: block;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+  object-position: center;
+}
+
+.blue_background {
+  background-color: rgba(0, 255, 0, 0.5);
+  background-blend-mode: overlay;
+}
+
+.contentWrapper {
+  position: relative;
+  display: flex;
+  margin-bottom: 170px;
+  width: 1213px;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigationWrapper {
+  align-self: stretch;
+  display: flex;
+  gap: 9px;
+}
+
+.logoWrapper {
+  display: flex;
+  margin: auto 0;
+}
+
+.navContent {
+  display: flex;
+  gap: 20px;
+  color: #fff;
+  justify-content: space-between;
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+.brandName {
+  margin: auto 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    width: 100%;
+    min-height: 1024px;
+  }
+
+  .navLinks {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .heroSection {
+    min-height: 596px;
+  }
+}
+
+.heroTitle {
+  color: #fff;
+  text-align: center;
+  margin-top: 271px;
+  max-width: 748px;
+  font: 600 52px/64px Graphik LCG, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+}
+
+.heroSubtitle {
+  color: #fff;
+  text-align: center;
+  margin-top: 32px;
+  font: 400 18px/178% Graphik LCG, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.ctaButton {
+  font-family: "Inter", sans-serif;
+  border-radius: 4px;
+  background-color: #eceff2;
+  margin-top: 99px;
+  color: #191c1f;
+  text-align: center;
+  padding: 20px 40px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
