@@ -8,3 +8,12 @@
 body {
   font-family: "Inter", sans-serif;
 }
+
+.arrow {
+  fill: #C2C8CD;
+  transition: 0.3s ease-in-out;
+}
+
+.arrow:hover {
+  fill: #2a6cea;
+}

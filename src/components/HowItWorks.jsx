@@ -12,7 +12,7 @@ const HowItWorks = () => {
         <ul className={styles.HowItWorks_listItems}>
           <li>
             <div className={styles.HowItWorks_listItem__img}>
-              <img src="Waiting.png" alt="" />
+              <img src="Waiting.png" alt="Waiting" />
             </div>
             <div className={styles.HowItWorks_listItem__text}>
               <h2>Прочитай задание внимательно</h2>

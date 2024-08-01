@@ -3,3 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.swiper-button-prev {
+  position: relative;
+  left: 10px !important;
+}
