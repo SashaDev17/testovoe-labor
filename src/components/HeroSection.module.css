@@ -31,10 +31,6 @@ li {
   height: 24px;
 }
 
-.background_container {
-
-}
-
 .backgroundImage {
   position: absolute;
   display: block;
@@ -44,6 +40,14 @@ li {
   object-fit: cover;
   background-size: cover;
   object-position: center;
+}
+
+.background_container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 100, 250, 0.5); /* Полупрозрачный синий цвет */
+  mix-blend-mode: overlay;
 }
 
 .blue_background {
@@ -79,6 +83,7 @@ li {
   justify-content: space-between;
   flex-grow: 1;
   flex-basis: auto;
+  align-items: center;
 }
 
 .brandName {
@@ -96,6 +101,28 @@ li {
   justify-content: space-between;
 }
 
+.burgerMenu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.showMenu {
+  display: flex !important;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #191c1f;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 768px) {
   .heroSection {
     width: 100%;
@@ -104,6 +131,10 @@ li {
 
   .navLinks {
     display: none;
+  }
+
+  .burgerMenu {
+    display: block;
   }
 }
 
@@ -149,6 +180,9 @@ li {
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
+  transition: .3s;
 }
 
-
+.ctaButton:hover {
+  background-color: #d4d7db;
+}
