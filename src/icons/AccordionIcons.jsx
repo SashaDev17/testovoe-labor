@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from '../components/QuestionsAnswers.module.css'
+import styles from '../components/Accordion/QuestionsAnswers.module.css'
 
 export const Plus = ({ className }) => (
   <svg

@@ -1,7 +1,9 @@
-// src/components/QuestionsAnswers.js
 import React, { useState } from "react";
-import { useGetQuestionsQuery } from "../redux/questionsApi";
+
+import { useGetQuestionsQuery } from "../../redux/questionsApi";
+
 import AccordionItem from "./AccordionItem";
+
 import styles from "./QuestionsAnswers.module.css";
 
 const QuestionsAnswers = () => {
@@ -16,7 +18,7 @@ const QuestionsAnswers = () => {
   if (error) return <p>Произошла ошибка: {error.message}</p>;
 
   return (
-    <div className={styles.QuestionsAnswers_container}>
+    <div className={styles.QuestionsAnswers_container} id="questions-answers">
       <div className={styles.QuestionsAnswers_heading}>
         <h1>Вопросы и ответы</h1>
       </div>
@@ -25,7 +27,7 @@ const QuestionsAnswers = () => {
           {data &&
             data.map((item, index) => (
               <AccordionItem
-                key={item.id } 
+                key={item.id}
                 header={item.header}
                 body={item.body}
                 isOpen={index === openId}

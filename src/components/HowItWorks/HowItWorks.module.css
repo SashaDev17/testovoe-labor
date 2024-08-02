@@ -1,0 +1,123 @@
+.HowItWorks_container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.HowItWorks_heading__container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 61px;
+}
+
+.HowItWorks_heading__container h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.HowItWorks_listItems {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.HowItWorks_listItems img {
+  max-width: 72px;
+  min-height: 72px;
+  object-fit: cover;
+}
+
+.HowItWorks_listItems h2 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.HowItWorks_listItems p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #5e646a;
+}
+
+@media (max-width: 1024px) {
+  .HowItWorks_heading__container h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .HowItWorks_listItems {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 32px 34px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .HowItWorks_listItems li {
+    display: flex;
+  }
+
+  .HowItWorks_listItem__img {
+    margin-right: 16px;
+  }
+
+  .HowItWorks_listItem__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .HowItWorks_listItems h2 {
+    margin-bottom: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .HowItWorks_listItems img {
+    max-width: 56px;
+    min-height: 56px;
+  }
+
+  .HowItWorks_listItems p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 576px) {
+  .HowItWorks_container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .HowItWorks_heading__container h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .HowItWorks_listItems img {
+    max-width: 48px;
+    min-height: 48px;
+  }
+
+  .HowItWorks_listItems h2 {
+    font-size: 1.1rem;
+  }
+
+  .HowItWorks_listItems p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .HowItWorks_listItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+  }
+}

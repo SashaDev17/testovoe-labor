@@ -4,7 +4,7 @@ import styles from "./ThirdBlock.module.css";
 
 const ThirdBlock = () => {
   return (
-    <div className={styles.ThirdBlock_container}>
+    <div className={styles.ThirdBlock_container} id="third-block">
       <div className={styles.ThirdBlock_left}>
         <h1>Круто, ты дошел до третьего блока</h1>
         <p>

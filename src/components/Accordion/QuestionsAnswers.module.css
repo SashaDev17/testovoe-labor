@@ -13,7 +13,7 @@
 
 .QuestionsAnswers_questions__item {
   padding: 25px 15px;
-  border-bottom: 1px solid #ECEFF2;
+  border-bottom: 1px solid #eceff2;
 }
 
 .questions_item__header {
@@ -28,13 +28,10 @@
   background-color: transparent;
   cursor: pointer;
   transition: 0.3s;
-  
 }
-
 
 .questions_header__items {
   display: flex;
-  
 }
 
 .questions_item__header:hover {
@@ -80,8 +77,3 @@
   transition: 0.3s;
   stroke: #191c1f;
 }
-
-
-
-
-

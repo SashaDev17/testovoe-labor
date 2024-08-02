@@ -3,12 +3,12 @@ import React from "react";
 import ReviewsCard from "./ReviewsCard";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Pagination, Navigation } from "swiper/modules";
 
-import { useGetReviewsQuery } from "../redux/reviewsApi";
+import { useGetReviewsQuery } from "../../redux/reviewsApi";
 
 import styles from "./SliderRev.module.css";
 
@@ -55,8 +55,13 @@ const Reviews = () => {
       >
         {reviews.map((review, index) => (
           <SwiperSlide key={review.id} className={styles.reviews_card}>
-            <ReviewsCard name={review.name} city={review.city} text={review.text} imgSrc={review.imgSrc}/>
-          </SwiperSlide >
+            <ReviewsCard
+              name={review.name}
+              city={review.city}
+              text={review.text}
+              imgSrc={review.imgSrc}
+            />
+          </SwiperSlide>
         ))}
       </Swiper>
       <div className={styles.reviews_slider__btns}>

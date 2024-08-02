@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Plus, Cross } from "../icons/AccordionIcons";
+import { Plus, Cross } from "../../icons/AccordionIcons";
 
 import styles from "./QuestionsAnswers.module.css";
 
